@@ -1,4 +1,4 @@
-**Science Curriculum Development**
+#Science Curriculum Development
 
 Below is the outline of ideas for the science curriculum. If you're
 interested in helping out with this aspect, some tasks include:
@@ -9,7 +9,7 @@ interested in helping out with this aspect, some tasks include:
 
 -   Making sure the right supplies get to the right place
 
-Learning Goals
+## Learning Goals
 
 1.  See some examples of university-level research
 
@@ -17,7 +17,7 @@ Learning Goals
 
 3.  Learn about the impacts of humans on the environment
 
-Overview
+## Overview
 
 1.  Time: 10 am -- 12 pm
 
@@ -31,9 +31,9 @@ Overview
 
     c.  Biodiversity and its benefits
 
-Invasive species and infectious disease
+## Invasive species and infectious disease
 
-1.  Mini lecture concepts
+1.  **Mini lecture concepts**
 
     a.  Invasive species
 
@@ -54,13 +54,13 @@ Invasive species and infectious disease
         iii. Fast-growing, broad-leaf plants have more resources
             available to pathogens, leading to more disease symptoms.
 
-2.  Experimental design: Plant *Microstegium vimineum* and native
+2.  **Experimental design:** Plant *Microstegium vimineum* and native
     grasses in pots in the greenhouse, move them out to Bivens, move
     them back to the greenhouse after a few days, incubate in plastic
     bags to promote foliar fungal infection. If infection doesn't work,
     we can just talk about plant traits.
 
-3.  Data collection: In the groups of 2-3, students will collect data on
+3.  **Data collection:** In the groups of 2-3, students will collect data on
     plant traits and disease symptoms for multiple species in the
     greenhouse
 
@@ -70,7 +70,7 @@ Invasive species and infectious disease
 
     h.  Measure leaf weight
 
-4.  Supplies (5 each)
+4.  **Supplies (5 each)**
 
     i.  Data sheets
 
@@ -86,7 +86,7 @@ Invasive species and infectious disease
 
     o.  Weigh boats
 
-Introduction to Bivens Arm
+## Introduction to Bivens Arm
 
 1.  Describe current research taking place here
 
@@ -95,14 +95,16 @@ Introduction to Bivens Arm
         i.  Soil microbial communities
 
         ii. Animals and granivory
+        
+        iii. Invasion, fire, plant community
 
     b.  Microstegium trial
 
     c.  Others? Greenhouse?
 
-Biodiversity and its benefits
+## Biodiversity and its benefits
 
-1.  Mini lecture concepts
+1.  **Mini lecture concepts**
 
     a.  Biodiversity
 
@@ -135,7 +137,7 @@ Biodiversity and its benefits
             food/reproductive host plants present in the community.
 
 2.  Experimental design:
-    [**[https://doi.org/10.1002/ece3.2729]{.underline}**](https://doi.org/10.1002/ece3.2729)
+    [**BARS experimental plots**](https://doi.org/10.1002/ece3.2729)
 
 3.  Data collection: In groups of 2-3, students will collect data from
     the drought/invasion experiments on species richness, an
@@ -147,11 +149,11 @@ Biodiversity and its benefits
     f.  Record number of observable plant species (morphological
         differences)
 
-        ix. Can use iNaturalist for species identification
+        ix. Can use [iNaturalist](https://www.inaturalist.org) for species identification
 
     g.  Use a meter stick to estimate height of plants within quadrat
 
-        x.  Pick a medium height plant?
+        x.  Pick a medium height plant? Or multiple canopy levels?
 
     h.  Record number of observable pollinators
 
