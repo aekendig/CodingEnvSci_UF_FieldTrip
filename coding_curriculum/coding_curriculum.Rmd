@@ -1,0 +1,190 @@
+---
+title: "Coding Curriculum Development"
+subtitle: "UF Env Sci Field Trip"
+output: 
+  html_document:
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Outline ideas for the coding curriculum. If you're
+interested in helping out with this aspect, some tasks include:
+
+-   Editing the outline with additional ideas and modifications
+
+-   Writing R markdown scripts for sections
+
+-   Testing lessons on your computer or in the computer lab
+
+## Learning Goals
+
+1.  Understand how data collected from experiments leads to conclusions
+
+2.  Gain confidence in ability to code
+
+3.  Learn about uncertainty/variation/the limits of scientific inference
+
+## Overview
+
+1.  Time: 1:15 pm -- 4:pm
+
+2.  Location: Architecture 116
+
+3.  Lessons
+
+    a.  Introduction to R
+
+    b.  Analyzing data: Invasive species and infectious disease
+
+    c.  Analyzing data: Biodiversity and its benefits
+
+    d.  If time: Using publicly available data to answer your own
+        questions
+
+4.  Refer to the Science Curriculum document for experiment details
+    relevant to b and c
+
+5.  Lessons will involve walking through concepts while students follow
+    along on their computers and then an opportunity for them to try
+    concepts on their own.
+
+## Introduction to R
+
+1.  Overview of what R is
+
+2.  R Studio set up
+
+3.  Basic concepts that will be needed for the next sections
+
+    a.  Variable naming - NOSPACES
+    
+        i. Commonly used: variablename, variable_name, variable.name, variableName, VariableName
+        
+        ii. Recommend: variable_name 
+    
+    b.  Commenting code: e.g., #this is a comment, so won't be read by R
+    
+    c.  Calculations
+    
+        i. Add/subtract, multiply/divide. Use vectors?
+        
+        ii. Intro to functions: mean, median, sqrt
+
+    d.  Dataframe
+    
+        i. Data types? numeric, character, factor
+
+    e.  Plots
+
+    f.  Packages?
+
+        i.  ggplot
+        
+        ii. dplyr? magrittr? depending on data manipulations
+
+## Analyzing data: Biodiversity and its benefits
+
+1.  Import data
+
+    a. read.csv, readr::read_csv, readxl::read_excel
+
+2.  Plot biomass vs. species richness
+
+    a.  Point plots
+
+3.  On their own: plots of pollinators or infection severity vs. species
+    richness
+
+4.  Not sure how far into the stats to go. Options:
+
+    b.  Mini lesson on linear regression
+
+    c.  ggplot linear regressions: 'lm' vs. 'lowess' method
+
+    d.  lm function
+
+5.  Translate into a verbal conclusion, talk about variation and next
+    steps
+
+## Analyzing data: Invasive species and infectious disease
+
+1.  Import data
+
+2.  Make new variables:
+
+    a.  LMA = weight / leaf area
+
+    b.  Infection severity = area infected / leaf area
+    
+    c.  Add to a data frame: data_frame$LMA = weight / leaf_area
+
+3.  3-D plot of plant traits with points colored by species and shapes
+    by origin
+
+4.  On their own: change the color palette or shapes
+
+5.  Plots of infection severity vs. leaf traits and origin
+
+    c.  Point plots
+
+    d.  Bar graphs or boxplots
+
+6.  Build upon stats concepts from last lesson because there are
+    multiple predictor variables
+
+7.  On their own: write their conclusions in words following the model
+    from the last lesson
+
+### Using publicly available data to answer your own questions
+
+1.  Given some dataset options that could include similar analyses to
+    those above
+
+2.  In groups of 2-3, write their own question and use the methods they
+    learned to answer it
+
+## Potentially useful resources
+
+### Introduction to R
+
+-   <https://www.rforcats.net/>
+
+-   <http://stat545.com/topics.html>
+
+-   <https://datacarpentry.org/R-ecology-lesson/01-intro-to-r.html>
+
+-   Hour of code Python: <https://www.sololearn.com/Play/Python/hoc>
+
+    -   This doesn't seem super helpful, but I like that it asks
+        questions and gives feedback
+
+-   <https://swirlstats.com/students.html>
+
+    -   Interactive (is within R), but not as visually appealing as the
+        Hour of Code programs
+
+-   <https://www.datacamp.com/courses/free-introduction-to-r>
+
+    -   Easy and interactive, but requires personal information to log
+        on
+
+### Public datasets
+
+-   <https://github.com/awesomedata/awesome-public-datasets>
+
+-   <https://www.kaggle.com/datasets> (non-ecology)
+
+    -   <https://www.kaggle.com/nadintamer/top-spotify-tracks-of-2018>
+
+    -   <https://www.kaggle.com/city-of-seattle/seattle-library-collection-inventory>
+
+    -   <https://www.kaggle.com/aaronschlegel/austin-animal-center-shelter-intakes-and-outcomes#aac_intakes.csv>
+
+    -   <https://www.kaggle.com/cityofLA/la-restaurant-market-health-data>
+
+-   <https://datadryad.org/> (FL ecology?)
+
+    -   <https://datadryad.org/resource/doi:10.5061/dryad.2ck58>
