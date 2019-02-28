@@ -1,4 +1,4 @@
-#Science Curriculum Development
+# Science Curriculum Development
 
 Below is the outline of ideas for the science curriculum. If you're
 interested in helping out with this aspect, some tasks include:
