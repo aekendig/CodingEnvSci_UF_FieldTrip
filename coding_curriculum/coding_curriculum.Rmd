@@ -1,6 +1,7 @@
 ---
 title: "Coding Curriculum Development"
 subtitle: "UF Env Sci Field Trip"
+author: "Amy Kendig, Whalen Dillon"
 output: 
   html_document:
     toc: yes
@@ -26,6 +27,8 @@ interested in helping out with this aspect, some tasks include:
 2.  Gain confidence in ability to code
 
 3.  Learn about uncertainty/variation/the limits of scientific inference
+
+**Work backwards from data they will work with to skills for visualization**
 
 ## Overview
 
