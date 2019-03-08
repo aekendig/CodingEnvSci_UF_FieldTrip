@@ -1,0 +1,125 @@
+---
+title: "data_processing"
+author: "Hao Ye"
+date: "February 28, 2017"
+output: html_document
+---
+
+```{r}
+library(dplyr)
+library(stringr)
+library(ggplot2)
+```
+
+```{r}
+SW_survey <- read.csv("StarWars.csv")
+
+# identify questions about characters
+char_names <- str_match(names(SW_survey), "How.do.you.view..([A-Za-z.0-9]+).")
+
+# subset data
+idx <- which(!is.na(char_names[, 1]))
+char_ratings <- SW_survey[, idx]
+names(char_ratings) <- char_names[idx, 2]
+char_ratings <- data.frame(id = SW_survey$ID, char_ratings)
+
+# convert to long
+survey_long <- tidyr::gather(char_ratings, character, 
+                             rating, 2:ncol(char_ratings))
+
+# fix ratings
+survey_long$rating[survey_long$rating == "Neither favorably nor unfavorably (neutral)"] <- "Neutral"
+survey_long$rating[survey_long$rating == ""] <- "Unfamiliar (N/A)"
+
+# convert to factor
+survey_long$rating <- factor(survey_long$rating, 
+                             levels = rev(c("Very unfavorably", 
+                                        "Somewhat unfavorably", 
+                                        "Neutral", 
+                                        "Somewhat favorably", 
+                                        "Very favorably", 
+                                        "Unfamiliar (N/A)")))
+
+# rename factor levels
+levels(survey_long$rating)[levels(survey_long$rating) == "Very unfavorably"] <- "1 - Very unfavorably"
+levels(survey_long$rating)[levels(survey_long$rating) == "Somewhat unfavorably"] <- "2 - Somewhat unfavorably"
+levels(survey_long$rating)[levels(survey_long$rating) == "Neutral"] <- "3 - Neutral"
+levels(survey_long$rating)[levels(survey_long$rating) == "Somewhat favorably"] <- "4 - Somewhat favorably"
+levels(survey_long$rating)[levels(survey_long$rating) == "Very favorably"] <- "5 - Very favorably"
+levels(survey_long$rating)[levels(survey_long$rating) == "Unfamiliar (N/A)"] <- "NA - Unfamiliar"
+
+# generate frequency table
+ratings_table <- survey_long #%>%
+#     group_by(character, rating) %>%
+#     summarize(n = n())
+
+ratings_table$character <- factor(gsub("\\.", " ", ratings_table$character))
+
+saveRDS(ratings_table, file = "SW_character_ratings.RDS")
+```
+
+```{r}
+SW_character_ratings <- readRDS("SW_character_ratings.RDS")
+p <- ggplot(SW_character_ratings, 
+            aes(x = character, fill = rating)) + 
+    geom_bar() + 
+    theme_bw() + 
+    theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0))
+print(p)
+```
+
+```{r}
+keep_cols <- c(1:4, 12:39, 62, 63, 65)
+thanksgiving_dinner <- read.csv("thanksgiving-2015-poll-data.csv")[, keep_cols]
+
+pie_data <- thanksgiving_dinner[,20:30]
+names(pie_data) <- NULL
+pie_data <- do.call(c, lapply(pie_data, as.character))
+pie_data <- pie_data[pie_data != ""]
+pie_data <- data.frame(pie_type = pie_data)
+write.csv(pie_data, file = "thanksgiving-2015-pie-data.csv", row.names = FALSE)
+```
+
+```{r}
+thanksgiving_pies <- read.csv("thanksgiving-2015-pie-data.csv")
+ggplot(thanksgiving_pies, 
+       aes(x = "", fill = pie_type)) + 
+    geom_bar() + 
+    theme_bw() + 
+    coord_polar("y")
+```
+
+```{r}
+co2_data <- read.table("co2_mm_mlo.txt", skip = 72)
+co2_data <- co2_data[, -NCOL(co2_data)]
+names(co2_data) <- c("year", "month", "decimal_date", "co2_average", "co2_interpolated", "co2_trend")
+
+temp_data <- read.csv("GLB.Ts+dSST.csv", skip = 1)[, 1:13]
+temp_data <- temp_data[temp_data$Year != 2017,]
+temp_data <- tidyr::gather(temp_data, month, temperature, Jan:Dec)
+temp_data$month <- as.numeric(factor(temp_data$month, 
+                                        levels = c("Jan", "Feb", "Mar", "Apr", 
+                                                   "May", "Jun", "Jul", "Aug", 
+                                                   "Sep", "Oct", "Nov", "Dec")))
+temp_data$temperature <- as.numeric(temp_data$temperature)
+
+co2_data$temp_anomaly <- temp_data$temperature[match(paste(co2_data$year, co2_data$month), paste(temp_data$Year, temp_data$month))]
+
+write.csv(co2_data, "co2_temperature.csv", row.names = FALSE)
+```
+
+```{r}
+co2_temp_data <- read.csv("co2_temperature.csv")
+ggplot(co2_temp_data, 
+       aes(x = decimal_date, y = co2_interpolated)) + 
+    geom_line() + 
+    theme_bw()
+ggplot(co2_temp_data, 
+       aes(x = decimal_date, y = temp_anomaly)) + 
+    geom_line() + 
+    theme_bw()
+```
+
+
+
+

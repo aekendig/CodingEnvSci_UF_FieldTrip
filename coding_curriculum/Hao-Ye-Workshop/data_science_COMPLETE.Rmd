@@ -1,0 +1,249 @@
+---
+title: "Introduction to Data Science (EYH)"
+author:
+    - "Jessica Carrière-Garwood"
+    - "Lynn Waterhouse"
+    - "Hao Ye"
+date: "March 4, 2017"
+output: html_document
+---
+
+# Basic Computations in R
+
+We start by demonstrating how to do some basic computations in R.
+
+## Example 1 (basic arithmetic)
+
+You may notice that the "code chunk" below looks a little different - it has a gray background and begins and ends with 3 copies of the ` symbol. These symbols help to differentiate computer code from normal text.
+
+We can type code in this part of the file and have the computer execute it. Begin by typing "1 + 2" into the code chunk. Then click on the green triangle to run the code and see the output.
+
+```{r}
+1 + 2
+```
+
+## Example 2 (variable assignment)
+
+If we were baking a pie, we would usually prepare the crust and filling separately and then combine them together. We can do the same for a complex set of instructions for the computer, by saving the results and combining them later.
+
+We can use the "<-" symbol to assign our results to **variables** that we can use later. The first line of the following code chunk saves the output of "10 * 10" into a variable named "a". Later, when we want to use the result, we only need to type "a" instead of the whole calculation
+
+Try saving the output of "3 ^ 5" into a variable named "b". 
+
+```{r}
+a <- 10 * 10
+b <- 3 ^ 5
+```
+
+After you run the code, do you notice the variables "a" and "b" appearing in your environment? Try typing "a" and "b" in the console.
+
+Now we can use the variables "a" and "b" for further calculations:
+
+```{r}
+a - b
+
+a * a + b
+
+sqrt((a + b) / 7) # pseudo Fermat-triple: 10^2 + 3^5 = 7^3
+```
+
+# Loading and Viewing Data
+
+## Read in raw csv data (Carbon Dioxide Measurements)
+
+We can load in large amounts of data in R by reading in some files directly.
+
+First, we can look at our file, which contains monthly measures of Carbon Dioxide (CO2) from Mauna Loa, Hawaii, and global temperature anomalies computed by the NASA Goddard Institute for Space Science.
+
+```{r}
+co2_temperature <- read.csv("co2_temperature.csv")
+```
+
+This creates a new object containing the data read in from the file.
+
+We can look at the entire dataset by simply evaluating the object as its own line of code:
+
+```{r, results = "hide"}
+co2_temperature
+```
+
+*output hidden due to length*
+
+Or portions of the dataset, such as the first 5 rows (but all 8 columns):
+
+```{r}
+co2_temperature[1:5, ]
+```
+
+Or the first 2 columns (but all 707 rows):
+
+```{r, results = "hide"}
+co2_temperature[, 1:2]
+```
+
+*output hidden due to length*
+
+Or only the first 5 rows and first 2 columns:
+
+```{r}
+co2_temperature[1:5, 1:2]
+```
+
+There are also convenient functions for viewing datasets:
+
+```{r}
+summary(co2_temperature)
+```
+
+# Make Plots
+
+We can explore patterns in the data by producing graphs, that allow visualization of information that may otherwise by too big or complex to see otherwise.
+
+To do this, we are going to load the `ggplot2` package.
+
+```{r}
+library(ggplot2)
+```
+
+## Basic lineplot (Carbon Dioxide)
+
+First, let's make a line plot, where the data points are joined together in order. Let's try this with the `co2_temperature` dataset.
+
+Here, the first variable to be replaced will be the name of the dataset. The x-axis variable has already been selected as `decimal_date`, which spaces out the months of the year accordingly, and the y-axis variable is `co2_interpolated`, which is the average monthly carbon-dioxide measurement, with missing values filled in through estimatation.
+
+```{r}
+ggplot(co2_temperature, 
+       aes(x = decimal_date, y = co2_interpolated)) + 
+    geom_line() + 
+    theme_bw()
+```
+
+Now try picking your own y-axis variable - select any of the columns of the dataset to try:
+
+```{r}
+ggplot(co2_temperature, 
+       aes(x = decimal_date, y = co2_trend)) + 
+    geom_line() + 
+    theme_bw()
+```
+
+*Here, the `co2_trend` variable is an estimate for the general trend in carbon dioxide, computed by subtracting out the seasonal variability.*
+
+## Load data from package (Gapminder)
+
+Some datasets are also part of packages, which are extensions of R that can be installed and then loaded.
+
+Here, we load the `gapminder` package, which contains information about life expectancy, population size, and gross domestric product (GDP) for 136 countries from 1952 to 2007:
+
+```{r}
+library(gapminder)
+```
+
+Try viewing this dataset:
+
+```{r}
+summary(gapminder)
+```
+
+## Basic scatterplot (Gapminder)
+
+First, we want to see if there is a relationships between GDP and life expectancy - whether people in richer countries live longer. Since the `gapminder` data contains measurements from multiple years, let's first restrict it to data from 2007. 
+
+```{r}
+gapminder_2007 <- gapminder[gapminder$year == 2007,] 
+```
+
+Now make a plot with the average income (variable `gdpPercap`) on the x-axis, and life expectancy (variable `lifeExp`) on the y-axis. 
+
+Recall that the first variable for `ggplot` will be the name of the dataset:
+
+```{r}
+ggplot(gapminder_2007, 
+       aes(x = gdpPercap, y = lifeExp)) + 
+    geom_point() + 
+    theme_bw()
+```
+
+Try changing one of the axes variables to be "pop" (population). Is there still a clear pattern?
+.
+```{r}
+ggplot(gapminder_2007, 
+       aes(x = gdpPercap, y = pop)) + 
+    geom_point() + 
+    theme_bw()
+```
+
+
+## Basic barplot (Thanksgiving pies)
+
+The `thanksgiving-2015-pie-data.csv` file contains survey results about the kinds of pie that people have at Thanksgiving.
+
+Try reading this into a new variable.
+
+```{r}
+thanksgiving_pies <- read.csv("thanksgiving-2015-pie-data.csv")
+```
+
+Let's use the `summary` function to see the contents of the dataset:
+
+```{r}
+summary(thanksgiving_pies)
+```
+
+To create a barplot, we're going to use a new geom, and this time allow the color to change according to the column name corresponding to the kind of pie.
+
+As before, the first input to `ggplot` will be the name of the dataset, 
+and the `fill` variable will be the column of the dataset with the data we want to plot:
+
+```{r}
+ggplot(thanksgiving_pies, 
+       aes(x = "", fill = pie_type)) + 
+    geom_bar() + 
+    theme_bw()
+```
+
+If we wanted to make this into a "pie" chart, we can use the same code as before, but add an additional line to change the coordinate system.
+
+```{r}
+ggplot(thanksgiving_pies, 
+       aes(x = "", fill = pie_type)) + 
+    geom_bar() + 
+    theme_bw() + 
+    coord_polar("y")
+```
+
+## Challenge Tasks
+
+If we want to change the default colors, we can do that by adding additional lines to define the color to use for the individual kinds of pie. Note that we can use `colors()` to see the list of available colors in R:
+
+```{r, results = "hide"}
+colors()
+```
+
+*output hidden due to length*
+
+Custom-colored pie pie-chart:
+
+```{r}
+ggplot(thanksgiving_pies, 
+       aes(x = "", fill = pie_type)) + 
+    geom_bar() + 
+    scale_fill_manual(values = c("Apple" = "red", 
+                                 "Buttermilk" = "antiquewhite", 
+                                 "Cherry" = "maroon", 
+                                 "Chocolate" = "chocolate", 
+                                 "Coconut cream" = "white", 
+                                 "Key lime" = "green", 
+                                 "None" = "gray", 
+                                 "Peach" = "orange", 
+                                 "Pecan" = "tan", 
+                                 "Pumpkin" = "dark orange", 
+                                 "Sweet Potato" = "brown")) + 
+    theme_bw() + 
+    coord_polar("y")
+
+```
+
+# Generate Report
+
+The specific kind of file we used is known as R markdown, which allows us to create reports easily. You can try this know by clicking on the "Knit" button above.
