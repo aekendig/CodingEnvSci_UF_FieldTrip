@@ -66,7 +66,7 @@ interested in helping out with this aspect, some tasks include:
 
     f.  Measure height
 
-    g.  Scan leaf for leaf area and disease symptoms
+    g.  Scan leaf for leaf area and damage (won't necessarily know cause)
 
     h.  Measure leaf weight
 
