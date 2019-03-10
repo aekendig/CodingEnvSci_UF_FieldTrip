@@ -1,0 +1,91 @@
+---
+title: "Invasive Species and Enemies"
+author: "Amy Kendig"
+date: "3/8/2019"
+output:
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Ice breaker
+
+This will be the first formal teaching situation of the day, so we'll take some time to introduce volunteers and participants.   
+
+* Everyone will say their first name and something they like or that they wish they knew more about that starts with the same first letter of their first name.   
+* Everyone else will respond with a greeting to that person.
+
+
+## What is an invasive species?
+
+Has anyone heard of kudzu, Burmese pythons, or lionfish?  
+
+* Props: pictures of each
+
+Tell me a little about what you know about these species
+
+* Kudzu grows over buildings and other plants, which causes structural damage and suppresses native species  
+* Burmese pythons consume animals like deer, racoons, rabbits, and other mammals, which not only affect those populations, but top predators like panthers and alligators. They also consume birds, inclduing endangered species.  
+* Lionfish consume other fish, which could have large effects on fisheries and the biodiversity of coral reefs.
+
+What do these species have in common?
+
+* Negatively affect native species
+* Categorized as "invasive"
+* They are all found in Florida
+
+What causes a species to be called "invasive"?\
+
+* Usually, they are not native, meaning that they were probably introduced accidentally or on purpose by humans
+* They have relatively large population sizes
+* They have a negative impact on humans and/or species that we care about (i.e. native or agricultural)
+
+With a partner, come up with answers to these two questions:
+
+* How can invasive species negatively affect your state?
+* How is it possible that invasive species can get to this point where they have large populations and are destructive?
+
+Review answers, some possibilities:
+
+* Impacts: reduced native plant diversity, fewer mammals, fewer birds, make species endangered, make buildings or land less valuable
+* Success: fewer predators or herbivores or better tolerance, better competitors than native species, use a unique set of resources for that location, can take advantage of mutualisms better than native species, 
+
+## Activity explanation
+
+Today, we're going to focus on this idea that invasive species either have fewer enemies or they are better able to tolerate enemies than native species. In the greenhouse we have a widespread invasive species, *Microstegium vimineum*, and multiple native plant species. 
+
+What are the enemies of plants?
+
+* foliar pathogens (viruses, bacteria, fungi)
+* soil pathogens (same, nematodes)
+* mammals (deer)
+* insects (grasshoppers, aphids)
+
+We previously put these plants outside at the field station, which we'll go to after this, to expose them to Florida's natural enemies. Then, we brought them back and put bags over them to enhance the symptoms of infection. Today, you'll assess how much damage each of them has and if that's either related to their origin (where *Microstegium* is non-native and the others are) or their traits, such as how tall they are and how thick their leaves are. These traits give us a metric for plant size.
+
+In your notebook, write down your hypotheses:
+
+* How do you think the origin will affect damage?
+* How do you think plant size will affect damage?
+
+Share some of your hypotheses.
+
+In your notebook, label each line with these (prop - poster with these):
+
+* Pot (for pot number/ID)
+* Species
+* Height
+* Weight
+* Leaf area
+* Damaged leaf area
+
+To measure height, we have rulers next to the pots. Choose the longest part of the plant to measure from the soil up to the top. To measure weight, chose one leaf and measure it with the scale. Then, bring that leaf over to the scanner. We'll use this to tell you leaf area and damaged leaf area. Once you have picked a pot, move it to this other table so that it doesn't get measured twice. 
+
+Can someone explain to use how to use the scale?
+
+* zero it
+* use the weigh boat
+* wait for it to stabilize
