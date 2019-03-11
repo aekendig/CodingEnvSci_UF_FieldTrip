@@ -36,8 +36,9 @@ What do these species have in common?
 * Negatively affect native species
 * Categorized as "invasive"
 * They are all found in Florida
+* Prop: Have distributions from EDDMaps available to show 
 
-What causes a species to be called "invasive"?\
+What causes a species to be called "invasive"?
 
 * Usually, they are not native, meaning that they were probably introduced accidentally or on purpose by humans
 * They have relatively large population sizes

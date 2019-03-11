@@ -1,0 +1,39 @@
+---
+title: "Biodiversity and Its Benefits"
+author: "Amy Kendig"
+date: "3/11/2019"
+output:
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+This lecture will follow an introduction to the Bivens Arm Field Station
+
+## What is biodiversity?
+While we're at the field station, we're going to take advantage of all of the life around us to think about the concept of biodiversity. How many people have heard the word "biodiversity" before? What does it mean to you?
+
+One way we learn more about biodiversity is by collecting specimens, or examples of organisms. Has anyone been to the Florida Museum? What kind of specimens do they have there?
+
+Take about three minutes and with a partner, go find a specimen and either take a picture of it, or bring it back here. 
+
+When students return, talk about what they saw. Talk about what other species might be around.
+
+We don't know the species names for all of these specimens, and that is something we could look up, but for now, let's estimate how many different species we have here. 
+
+That measurement - the number of species is called richness.
+
+* Prop: figure demonstrating different richness between two communities
+
+Another way we can think about diversity is by the dominance of species. What is the difference between these two communities?
+
+* Prop: figure demonstrating different eveness between two communities
+
+
+
+
+
