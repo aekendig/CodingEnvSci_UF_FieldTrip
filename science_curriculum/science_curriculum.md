@@ -114,7 +114,7 @@ interested in helping out with this aspect, some tasks include:
 
     b.  Ecosystem functions
 
-        iii. Biomass
+        iii. Photosynthesis
 
         iv. Disease suppression
 

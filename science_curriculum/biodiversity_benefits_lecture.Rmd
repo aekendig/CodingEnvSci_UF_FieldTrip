@@ -15,13 +15,18 @@ knitr::opts_chunk$set(echo = TRUE)
 This lecture will follow an introduction to the Bivens Arm Field Station
 
 ## What is biodiversity?
+
 While we're at the field station, we're going to take advantage of all of the life around us to think about the concept of biodiversity. How many people have heard the word "biodiversity" before? What does it mean to you?
 
 One way we learn more about biodiversity is by collecting specimens, or examples of organisms. Has anyone been to the Florida Museum? What kind of specimens do they have there?
 
 Take about three minutes and with a partner, go find a specimen and either take a picture of it, or bring it back here. 
 
-When students return, talk about what they saw. Talk about what other species might be around.
+When students return, talk about
+
+* what they saw
+* what other species might be around
+* which things are more or less similar to each other
 
 We don't know the species names for all of these specimens, and that is something we could look up, but for now, let's estimate how many different species we have here. 
 
@@ -29,11 +34,51 @@ That measurement - the number of species is called richness.
 
 * Prop: figure demonstrating different richness between two communities
 
-Another way we can think about diversity is by the dominance of species. What is the difference between these two communities?
+Another way we can think about diversity is by the number of individuals per species. What is the difference between these two communities?
 
 * Prop: figure demonstrating different eveness between two communities
 
+There are multiple ways to measure diversity, but we're going to use those two today: richness or number of species and evenness or number of individuals per species
 
+## Benefits of biodiversity
 
+Now, that we know what biodiversity is, why does it matter? Take a second and write down in your notebook why biodiversity matters. Allow students to share.
 
+There are some other benefits you might not know about biodiversity. 
 
+* Prop: Poster with these words on them
+
+Disease: Does anyone know why farmers rotate between different types of crops? When you have a single crop, and it has very low variability, so that individuals are basically identical to one another, they are very susceptible to a disease outbreak. If a disease gets into the field that can infect one individual, it can infect all of them and spread very quickly. Biodiversity can stop that spread because some of the individuals will be resistant to the disease, so even if they come into contact with the bacteria or fungus or virus that's causing disease, they won't get infected and they won't spread it.
+
+Pollination: Does anyoen know what bees, butterflies, and bats have in common? They are all pollinators. Diverse ecosystems with lots of insects and animals, and lots of plants to support those creatures, provide the global benefit of pollination. Why is pollination important? Not only is pollination useful for the wild plants like the ones you see out here, but it is necessary for lots of crops like almonds, apples, plums, and blueberries.
+
+Photosynthesis: The third benefit of biodiversity I want us to think about today is photosynthesis. 
+
+* Someone explain to us what photosynthesis is. 
+* Why should we care about photosynthesis?
+
+Not only do we benefit from the clean air, but the building up of sugars and plant material is very useful. We call that plant material biomass. Biomass can be used for food, like the grass that cattle eat, it can be a place where the earth stores CO2, like in forests, or it can be used as an alternative fuel source.
+
+## Data collection
+
+In groups of 2-3, students will collect data from the drought/invasion experiments on species richness, an approximation for biomass, and either pollinator or disease intensity.
+
+In your notebook, label each line with these (prop - poster with these):
+
+* Plot (for plot number)
+* Richness
+* Height (3 lines)
+* Pollinators
+* Disease
+
+These are the steps you'll take to gather these measurments (demonstrate):
+
+* Hold PVC quadrats over a plot
+* Record number of observable plant species (morphological differences)
+ + Can use [iNaturalist](https://www.inaturalist.org) for species identification
+* Use a meter stick to estimate height of plants within quadrat
+ + Pick three different heights to record, preferably different canopy heights
+* Record number of observable pollinators
+* Estimate number of leaves with damage that looks like it was caused by a pathogen
+
+Before you start, write in your notebook how you think richness will be related to height, pollinators, and disease when we pool the data across all of the plots. Share and discuss.
