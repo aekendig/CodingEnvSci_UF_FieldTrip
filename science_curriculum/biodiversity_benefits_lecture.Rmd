@@ -38,7 +38,7 @@ Another way we can think about diversity is by the number of individuals per spe
 
 * Prop: figure demonstrating different eveness between two communities
 
-There are multiple ways to measure diversity, but we're going to use those two today: richness or number of species and evenness or number of individuals per species
+There are multiple ways to measure diversity, but we're going to use richness or number of species today
 
 ## Benefits of biodiversity
 
