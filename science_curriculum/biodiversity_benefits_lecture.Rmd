@@ -1,7 +1,7 @@
 ---
 title: "Biodiversity and Its Benefits"
-author: "Amy Kendig"
-date: "3/11/2019"
+author: "Amy Kendig, Tabitha Petri"
+date: "3/14/2019"
 output:
   word_document: default
   html_document: default
@@ -18,9 +18,20 @@ This lecture will follow an introduction to the Bivens Arm Field Station
 
 While we're at the field station, we're going to take advantage of all of the life around us to think about the concept of biodiversity. How many people have heard the word "biodiversity" before? What does it mean to you?
 
+Back-up questions
+
+* What comes to mind when you think about the prefix “bio”? * How about “diversity”?  
+* So what do you think scientists means when they talk about “biodiversity” together?
+
 One way we learn more about biodiversity is by collecting specimens, or examples of organisms. Has anyone been to the Florida Museum? What kind of specimens do they have there?
 
 Take about three minutes and with a partner, go find a specimen and either take a picture of it, or bring it back here. 
+
+Instructions
+
+* You can pull up plants outside of plots
+* You can take pictures of plants inside of plots
+* We may have nets and containers for collecting insects leftover from activity the previous Friday
 
 When students return, talk about
 
@@ -33,10 +44,12 @@ We don't know the species names for all of these specimens, and that is somethin
 That measurement - the number of species is called richness.
 
 * Prop: figure demonstrating different richness between two communities
+* Example:
+![](https://www.researchgate.net/profile/Saeed_El-Ashram/publication/315642628/figure/fig2/AS:475873733287936@1490468547009/A-diagram-describing-species-richness-and-evenness-and-how-they-characterize-the_W640.jpg)
 
 Another way we can think about diversity is by the number of individuals per species. What is the difference between these two communities?
 
-* Prop: figure demonstrating different eveness between two communities
+* Prop: figure demonstrating different evenness between two communities
 
 There are multiple ways to measure diversity, but we're going to use richness or number of species today
 
@@ -50,7 +63,7 @@ There are some other benefits you might not know about biodiversity.
 
 Disease: Does anyone know why farmers rotate between different types of crops? When you have a single crop, and it has very low variability, so that individuals are basically identical to one another, they are very susceptible to a disease outbreak. If a disease gets into the field that can infect one individual, it can infect all of them and spread very quickly. Biodiversity can stop that spread because some of the individuals will be resistant to the disease, so even if they come into contact with the bacteria or fungus or virus that's causing disease, they won't get infected and they won't spread it.
 
-Pollination: Does anyoen know what bees, butterflies, and bats have in common? They are all pollinators. Diverse ecosystems with lots of insects and animals, and lots of plants to support those creatures, provide the global benefit of pollination. Why is pollination important? Not only is pollination useful for the wild plants like the ones you see out here, but it is necessary for lots of crops like almonds, apples, plums, and blueberries.
+Pollination: Does anyone know what bees, butterflies, and bats have in common? They are all pollinators. Diverse ecosystems with lots of insects and animals, and lots of plants to support those creatures, provide the global benefit of pollination. Why is pollination important? Not only is pollination useful for the wild plants like the ones you see out here, but it is necessary for lots of crops like almonds, apples, plums, and blueberries.
 
 Photosynthesis: The third benefit of biodiversity I want us to think about today is photosynthesis. 
 
@@ -70,6 +83,7 @@ In your notebook, label each line with these (prop - poster with these):
 * Height (3 lines)
 * Pollinators
 * Disease
+* Observations
 
 These are the steps you'll take to gather these measurments (demonstrate):
 
@@ -80,5 +94,20 @@ These are the steps you'll take to gather these measurments (demonstrate):
  + Pick three different heights to record, preferably different canopy heights
 * Record number of observable pollinators
 * Estimate number of leaves with damage that looks like it was caused by a pathogen
+* In the observations section, write down any observations that don't fit into these categories. For example, some of our researchers have noticed rodent nests in some of these plots. That would be something to write down because it could lead to an interesting follow-up study.
 
 Before you start, write in your notebook how you think richness will be related to height, pollinators, and disease when we pool the data across all of the plots. Share and discuss.
+
+Props
+* Richness/evenness poster
+* Biodiversity benefits poster
+* Data collection poster
+
+Materials
+* PVC Quadrats
+* Notebooks
+* Pencils
+* Phone apps (tell them to download ahead of time)
+* Meter sticks
+* Insect nets
+* Clear containers 
