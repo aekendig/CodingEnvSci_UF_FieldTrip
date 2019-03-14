@@ -1,0 +1,49 @@
+---
+title: "invasive_species_enemies_code"
+author: "Amy Kendig"
+date: "3/14/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load packages
+
+Install and load the package "tidyverse", which contains tools for manipulating and visualizing data. *For curriculum development, I've commented out the installation.* 
+
+```{r}
+#install.packages("tidyverse")
+library("tidyverse")
+```
+
+## Import data
+
+During lunch, we entered all of your data. Import the greenhouse data from the "data" folder.
+*For curriculum development, I'm importing actual height data and simulating the rest* 
+
+```{r}
+gh <- read_csv("./data/invasive_species_example_height.csv")
+```
+
+Simulation code (will remove)
+
+```{r}
+library("truncnorm")
+gh <- gh %>%
+  mutate(
+    weight = rtruncnorm(n = 18, a = 0, mean = 4, sd = 2),
+    leaf_area = rtruncnorm(n = 18, a = 0, mean = 20, sd = 10)
+  ) %>%
+  mutate(
+    damage_area = runif(18, 0, 0.5) * leaf_area
+  )
+```
+
+Add the full species name to the data
+
+```{r}
+gh$species_full <- recode(gh$species, Mv = "Microstegium vimineum", Ev = "Elymus virginicus", Es = "Eragrostis spectabilis", Pc = "Panicum clandestinum", Cc = "Calamagrostis canadensis", Gs = "Glyceria striata")
+```
+
