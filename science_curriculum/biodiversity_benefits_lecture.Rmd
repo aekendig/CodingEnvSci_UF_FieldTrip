@@ -18,22 +18,23 @@ This lecture will follow an introduction to the Bivens Arm Field Station
 
 While we're at the field station, we're going to take advantage of all of the life around us to think about the concept of biodiversity. How many people have heard the word "biodiversity" before? What does it mean to you?
 
-Back-up questions
+Back-up questions:
 
-* What comes to mind when you think about the prefix “bio”? * How about “diversity”?  
+* What comes to mind when you think about the prefix “bio”? 
+* How about “diversity”?
 * So what do you think scientists means when they talk about “biodiversity” together?
 
 One way we learn more about biodiversity is by collecting specimens, or examples of organisms. Has anyone been to the Florida Museum? What kind of specimens do they have there?
 
 Take about three minutes and with a partner, go find a specimen and either take a picture of it, or bring it back here. 
 
-Instructions
+Instructions:
 
 * You can pull up plants outside of plots
 * You can take pictures of plants inside of plots
 * We may have nets and containers for collecting insects leftover from activity the previous Friday
 
-When students return, talk about
+When students return, talk about:
 
 * what they saw
 * what other species might be around
@@ -98,12 +99,16 @@ These are the steps you'll take to gather these measurments (demonstrate):
 
 Before you start, write in your notebook how you think richness will be related to height, pollinators, and disease when we pool the data across all of the plots. Share and discuss.
 
-Props
+## Supplies
+
+Props:
+
 * Richness/evenness poster
 * Biodiversity benefits poster
 * Data collection poster
 
-Materials
+Materials:
+
 * PVC Quadrats
 * Notebooks
 * Pencils
