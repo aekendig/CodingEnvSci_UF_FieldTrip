@@ -24,7 +24,7 @@ During lunch, we entered all of your data. Import the greenhouse data from the "
 *For curriculum development, I'm importing actual height data and simulating the rest* 
 
 ```{r}
-gh <- read_csv("./data/invasive_species_example_height.csv")
+gh <- read_csv("coding_curriculum/data/invasive_species_example_height.csv")
 ```
 
 Simulation code (will remove)
