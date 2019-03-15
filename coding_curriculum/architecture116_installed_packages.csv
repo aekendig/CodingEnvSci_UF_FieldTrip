@@ -1,0 +1,129 @@
+Package,LibPath,Version,Priority,Depends,Imports,LinkingTo,Suggests,Enhances,License,License_is_FOSS,License_restricts_use,OS_type,MD5sum,NeedsCompilation,Built
+acepack,C:/Program Files/R/R-3.4.1/library,1.4.1,NA,NA,NA,NA,testthat,NA,MIT + file LICENSE,NA,NA,NA,NA,yes,3.4.1
+assertthat,C:/Program Files/R/R-3.4.1/library,0.2.0,NA,NA,tools,NA,testthat,NA,GPL-3,NA,NA,NA,NA,no,3.4.1
+backports,C:/Program Files/R/R-3.4.1/library,1.1.0,NA,R (>= 3.0.0),utils,NA,NA,NA,GPL-2,NA,NA,NA,NA,no,3.4.0
+base,C:/Program Files/R/R-3.4.1/library,3.4.1,base,NA,NA,NA,methods,NA,Part of R 3.4.1,NA,NA,NA,NA,NA,3.4.1
+base64enc,C:/Program Files/R/R-3.4.1/library,0.1-3,NA,R (>= 2.9.0),NA,NA,NA,png,GPL-2 | GPL-3,NA,NA,NA,NA,yes,3.4.0
+BaylorEdPsych,C:/Program Files/R/R-3.4.1/library,0.5,NA,NA,NA,NA,"mvnmle, moments",NA,GPL (>= 2),NA,NA,NA,NA,NA,3.4.0
+BH,C:/Program Files/R/R-3.4.1/library,1.62.0-1,NA,NA,NA,NA,NA,NA,BSL-1.0,NA,NA,NA,NA,no,3.4.0
+bindr,C:/Program Files/R/R-3.4.1/library,0.1,NA,NA,NA,NA,testthat,NA,MIT + file LICENSE,NA,NA,NA,NA,no,3.4.1
+bindrcpp,C:/Program Files/R/R-3.4.1/library,0.2,NA,NA,"Rcpp, bindr","Rcpp, plogr",testthat,NA,MIT + file LICENSE,NA,NA,NA,NA,yes,3.4.1
+boot,C:/Program Files/R/R-3.4.1/library,1.3-19,recommended,"R (>= 3.0.0), graphics, stats",NA,NA,"MASS, survival",NA,Unlimited,NA,NA,NA,NA,no,3.4.1
+checkmate,C:/Program Files/R/R-3.4.1/library,1.8.3,NA,R (>= 3.0.0),"backports (>= 1.1.0), utils",NA,"data.table (>= 1.9.8), devtools, ggplot2, knitr, rmarkdown,
+magrittr, microbenchmark, testthat (>= 0.11.0), tibble",NA,BSD_3_clause + file LICENSE,NA,NA,NA,NA,yes,3.4.1
+class,C:/Program Files/R/R-3.4.1/library,7.3-14,recommended,"R (>= 3.0.0), stats, utils",MASS,NA,NA,NA,GPL-2 | GPL-3,NA,NA,NA,NA,yes,3.4.1
+cluster,C:/Program Files/R/R-3.4.1/library,2.0.6,recommended,R (>= 3.0.1),"graphics, grDevices, stats, utils",NA,MASS,NA,GPL (>= 2),NA,NA,NA,NA,yes,3.4.1
+codetools,C:/Program Files/R/R-3.4.1/library,0.2-15,recommended,R (>= 2.1),NA,NA,NA,NA,GPL,NA,NA,NA,NA,no,3.4.1
+colorspace,C:/Program Files/R/R-3.4.1/library,1.3-2,NA,"R (>= 2.13.0), methods","graphics, grDevices",NA,"datasets, stats, utils, KernSmooth, MASS, kernlab, mvtnorm,
+vcd, dichromat, tcltk, shiny, shinyjs",NA,BSD_3_clause + file LICENSE,NA,NA,NA,NA,yes,3.4.1
+compiler,C:/Program Files/R/R-3.4.1/library,3.4.1,base,NA,NA,NA,NA,NA,Part of R 3.4.1,NA,NA,NA,NA,NA,3.4.1
+data.table,C:/Program Files/R/R-3.4.1/library,1.10.4,NA,R (>= 3.0.0),methods,NA,"bit64, knitr, nanotime, chron, ggplot2 (>= 0.9.0), plyr,
+reshape, reshape2, testthat (>= 0.4), hexbin, fastmatch, nlme,
+xts, gdata, GenomicRanges, caret, curl, zoo, plm, rmarkdown,
+parallel",NA,GPL-3 | file LICENSE,NA,NA,NA,NA,yes,3.4.0
+datasets,C:/Program Files/R/R-3.4.1/library,3.4.1,base,NA,NA,NA,NA,NA,Part of R 3.4.1,NA,NA,NA,NA,NA,3.4.1
+dichromat,C:/Program Files/R/R-3.4.1/library,2.0-0,NA,"R (>= 2.10), stats",NA,NA,NA,NA,GPL-2,NA,NA,NA,NA,NA,3.4.0
+digest,C:/Program Files/R/R-3.4.1/library,0.6.12,NA,R (>= 2.4.1),NA,NA,"knitr, rmarkdown",NA,GPL (>= 2),NA,NA,NA,NA,yes,3.4.1
+dplyr,C:/Program Files/R/R-3.4.1/library,0.7.2,NA,R (>= 3.1.2),"assertthat, bindrcpp (>= 0.2), glue (>= 1.1.0), magrittr,
+methods, pkgconfig, rlang (>= 0.1), R6, Rcpp (>= 0.12.6),
+tibble (>= 1.3.1), utils","Rcpp (>= 0.12.0), BH (>= 1.58.0-1), bindrcpp, plogr","bit64, covr, dbplyr, dtplyr, DBI, ggplot2, hms, knitr, Lahman
+(>= 3.0-1), mgcv, microbenchmark, nycflights13, rmarkdown,
+RMySQL, RPostgreSQL, RSQLite, testthat, withr",NA,MIT + file LICENSE,NA,NA,NA,NA,yes,3.4.1
+evaluate,C:/Program Files/R/R-3.4.1/library,0.10.1,NA,R (>= 3.0.2),"methods, stringr (>= 0.6.2)",NA,"testthat, lattice, ggplot2",NA,MIT + file LICENSE,NA,NA,NA,NA,no,3.4.1
+foreign,C:/Program Files/R/R-3.4.1/library,0.8-69,recommended,R (>= 3.0.0),"methods, utils, stats",NA,NA,NA,GPL (>= 2),NA,NA,NA,NA,yes,3.4.1
+Formula,C:/Program Files/R/R-3.4.1/library,1.2-2,NA,"R (>= 2.0.0), stats",NA,NA,NA,NA,GPL-2 | GPL-3,NA,NA,NA,NA,no,3.4.1
+gdata,C:/Program Files/R/R-3.4.1/library,2.18.0,NA,R (>= 2.3.0),"gtools, stats, methods, utils",NA,RUnit,NA,GPL-2,NA,NA,NA,NA,no,3.4.0
+ggplot2,C:/Program Files/R/R-3.4.1/library,2.2.1,NA,R (>= 3.1),"digest, grid, gtable (>= 0.1.1), MASS, plyr (>= 1.7.1),
+reshape2, scales (>= 0.4.1), stats, tibble, lazyeval",NA,"covr, ggplot2movies, hexbin, Hmisc, lattice, mapproj, maps,
+maptools, mgcv, multcomp, nlme, testthat (>= 0.11.0), quantreg,
+knitr, rpart, rmarkdown, svglite",sp,GPL-2 | file LICENSE,NA,NA,NA,NA,no,3.4.1
+glue,C:/Program Files/R/R-3.4.1/library,1.1.1,NA,R (>= 3.0.0),methods,NA,"testthat, covr, magrittr",NA,MIT + file LICENSE,NA,NA,NA,NA,yes,3.4.1
+gmodels,C:/Program Files/R/R-3.4.1/library,2.16.2,NA,R (>= 1.9.0),"MASS, gdata",NA,"gplots, gtools, Matrix, nlme, lme4 (>= 0.999999-0)",NA,GPL-2,NA,NA,NA,NA,no,3.4.1
+graphics,C:/Program Files/R/R-3.4.1/library,3.4.1,base,NA,grDevices,NA,NA,NA,Part of R 3.4.1,NA,NA,NA,NA,yes,3.4.1
+grDevices,C:/Program Files/R/R-3.4.1/library,3.4.1,base,NA,NA,NA,KernSmooth,NA,Part of R 3.4.1,NA,NA,NA,NA,yes,3.4.1
+grid,C:/Program Files/R/R-3.4.1/library,3.4.1,base,NA,"grDevices, utils",NA,lattice,NA,Part of R 3.4.1,NA,NA,NA,NA,yes,3.4.1
+gridExtra,C:/Program Files/R/R-3.4.1/library,2.2.1,NA,NA,"gtable, grid, grDevices, graphics, utils",NA,"ggplot2, lattice, knitr, testthat",NA,GPL (>= 2),NA,NA,NA,NA,no,3.4.1
+gtable,C:/Program Files/R/R-3.4.1/library,0.2.0,NA,R (>= 2.14),grid,NA,"testthat, covr",NA,GPL-2,NA,NA,NA,NA,no,3.4.1
+gtools,C:/Program Files/R/R-3.4.1/library,3.5.0,NA,R (>= 2.10),NA,NA,NA,NA,GPL-2,NA,NA,NA,NA,yes,3.4.0
+highr,C:/Program Files/R/R-3.4.1/library,0.6,NA,R (>= 3.0.2),NA,NA,"knitr, testit",NA,GPL,NA,NA,NA,NA,no,3.4.1
+Hmisc,C:/Program Files/R/R-3.4.1/library,4.0-3,NA,"lattice, survival (>= 2.40-1), Formula, ggplot2 (>= 2.2)","methods, latticeExtra, cluster, rpart, nnet, acepack, foreign,
+gtable, grid, gridExtra, data.table, htmlTable, viridis,
+htmltools, base64enc",NA,"chron, rms, mice, tables, knitr, ff, ffbase, plotly (>=
+4.5.6)",NA,GPL (>= 2),NA,NA,NA,NA,yes,3.4.1
+hms,C:/Program Files/R/R-3.4.1/library,0.3,NA,NA,methods,NA,"testthat, lubridate",NA,GPL-3,NA,NA,NA,NA,no,3.4.1
+htmlTable,C:/Program Files/R/R-3.4.1/library,1.9,NA,NA,"stringr, knitr (>= 1.6), magrittr (>= 1.5), methods,
+checkmate, htmlwidgets",NA,"testthat, XML, xtable, ztable, Hmisc, reshape, rmarkdown,
+pander, chron, lubridate",NA,GPL (>= 3),NA,NA,NA,NA,no,3.4.1
+htmltools,C:/Program Files/R/R-3.4.1/library,0.3.6,NA,R (>= 2.14.1),"utils, digest, Rcpp",Rcpp,"markdown, testthat",knitr,GPL (>= 2),NA,NA,NA,NA,yes,3.4.1
+htmlwidgets,C:/Program Files/R/R-3.4.1/library,0.9,NA,NA,"htmltools (>= 0.3), jsonlite (>= 0.9.16), yaml",NA,knitr (>= 1.8),shiny (>= 0.12),MIT + file LICENSE,NA,NA,NA,NA,no,3.4.1
+jsonlite,C:/Program Files/R/R-3.4.1/library,1.5,NA,methods,NA,NA,"httr, curl, plyr, testthat, knitr, rmarkdown, R.rsp, sp",NA,MIT + file LICENSE,NA,NA,NA,NA,yes,3.4.1
+KernSmooth,C:/Program Files/R/R-3.4.1/library,2.23-15,recommended,"R (>= 2.5.0), stats",NA,NA,MASS,NA,Unlimited,NA,NA,NA,NA,yes,3.4.1
+knitr,C:/Program Files/R/R-3.4.1/library,1.17,NA,R (>= 3.1.0),"evaluate (>= 0.10), digest, highr, markdown, stringr (>= 0.6),
+yaml, methods, tools",NA,"formatR, testit, rgl (>= 0.95.1201), codetools, rmarkdown,
+htmlwidgets (>= 0.7), webshot, tikzDevice (>= 0.10), png, jpeg,
+XML, RCurl, DBI (>= 0.4-1), tibble",NA,GPL,NA,NA,NA,NA,no,3.4.1
+labeling,C:/Program Files/R/R-3.4.1/library,0.3,NA,NA,NA,NA,NA,NA,MIT + file LICENSE | Unlimited,NA,NA,NA,NA,no,3.4.0
+languageR,C:/Program Files/R/R-3.4.1/library,1.4.1,NA,R(>= 3.0.2),methods,NA,"cluster, e1071, rms, Hmisc, MASS, rpart, lattice, zipfR,
+lme4, multcomp, lmerTest, optimx",NA,GPL (>= 2),NA,NA,NA,NA,no,3.4.1
+lattice,C:/Program Files/R/R-3.4.1/library,0.20-35,recommended,R (>= 3.0.0),"grid, grDevices, graphics, stats, utils",NA,"KernSmooth, MASS, latticeExtra",chron,GPL (>= 2),NA,NA,NA,NA,yes,3.4.1
+latticeExtra,C:/Program Files/R/R-3.4.1/library,0.6-28,NA,"R (>= 2.10.0), lattice, RColorBrewer","grid, stats, utils, grDevices",NA,"maps, mapproj, deldir, tripack, zoo, MASS, quantreg, mgcv",NA,GPL (>= 2),NA,NA,NA,NA,no,3.4.1
+lazyeval,C:/Program Files/R/R-3.4.1/library,0.2.0,NA,R (>= 3.1.0),NA,NA,"knitr, rmarkdown (>= 0.2.65), testthat, covr",NA,GPL-3,NA,NA,NA,NA,yes,3.4.1
+lme4,C:/Program Files/R/R-3.4.1/library,1.1-13,NA,"R (>= 3.0.2), Matrix (>= 1.1.1), methods, stats","graphics, grid, splines, utils, parallel, MASS, lattice, nlme
+(>= 3.1-123), minqa (>= 1.1.15), nloptr (>= 1.0.4)","Rcpp (>= 0.10.5), RcppEigen","knitr, boot, PKPDmodels, MEMSS, testthat (>= 0.8.1), ggplot2,
+mlmRev, optimx (>= 2013.8.6), gamm4, pbkrtest, HSAUR2, numDeriv",NA,GPL (>= 2),NA,NA,NA,NA,yes,3.4.1
+lmerTest,C:/Program Files/R/R-3.4.1/library,2.0-33,NA,"R (>= 3.0.0), Matrix, stats, methods, lme4 (>= 1.0)","plyr, MASS, Hmisc, ggplot2",NA,"pbkrtest, nlme, estimability",NA,GPL (>= 2),NA,NA,NA,NA,no,3.4.1
+magrittr,C:/Program Files/R/R-3.4.1/library,1.5,NA,NA,NA,NA,"testthat, knitr",NA,MIT + file LICENSE,NA,NA,NA,NA,no,3.4.1
+markdown,C:/Program Files/R/R-3.4.1/library,0.8,NA,R (>= 2.11.1),"utils, mime (>= 0.3)",NA,"knitr, RCurl",NA,GPL-2,NA,NA,NA,NA,yes,3.4.1
+MASS,C:/Program Files/R/R-3.4.1/library,7.3-47,recommended,"R (>= 3.1.0), grDevices, graphics, stats, utils",methods,NA,"lattice, nlme, nnet, survival",NA,GPL-2 | GPL-3,NA,NA,NA,NA,yes,3.4.1
+Matrix,C:/Program Files/R/R-3.4.1/library,1.2-10,recommended,R (>= 3.0.1),"methods, graphics, grid, stats, utils, lattice",NA,"expm, MASS","MatrixModels, graph, SparseM, sfsmisc",GPL (>= 2) | file LICENCE,NA,NA,NA,NA,yes,3.4.1
+methods,C:/Program Files/R/R-3.4.1/library,3.4.1,base,NA,"utils, stats",NA,codetools,NA,Part of R 3.4.1,NA,NA,NA,NA,yes,3.4.1
+mgcv,C:/Program Files/R/R-3.4.1/library,1.8-17,recommended,"R (>= 2.14.0), nlme (>= 3.1-64)","methods, stats, graphics, Matrix",NA,"splines, parallel, survival, MASS",NA,GPL (>= 2),NA,NA,NA,NA,yes,3.4.1
+mime,C:/Program Files/R/R-3.4.1/library,0.5,NA,NA,tools,NA,NA,NA,GPL,NA,NA,NA,NA,yes,3.4.0
+minqa,C:/Program Files/R/R-3.4.1/library,1.2.4,NA,NA,Rcpp (>= 0.9.10),Rcpp,NA,NA,GPL-2,NA,NA,NA,NA,yes,3.4.1
+multcomp,C:/Program Files/R/R-3.4.1/library,1.4-6,NA,"stats, graphics, mvtnorm (>= 1.0-3), survival (>= 2.39-4),
+TH.data (>= 1.0-2)","sandwich (>= 2.3-0), codetools",NA,"lme4 (>= 0.999375-16), nlme, robustbase, coin, MASS, car,
+foreign, xtable, lmtest, coxme (>= 2.2-1), SimComp, ISwR",NA,GPL-2,NA,NA,NA,NA,no,3.4.1
+munsell,C:/Program Files/R/R-3.4.1/library,0.4.3,NA,NA,"colorspace, methods",NA,"ggplot2, testthat",NA,MIT + file LICENSE,NA,NA,NA,NA,no,3.4.1
+mvtnorm,C:/Program Files/R/R-3.4.1/library,1.0-6,NA,R(>= 1.9.0),"stats, methods",NA,NA,NA,GPL-2,NA,NA,NA,NA,yes,3.4.0
+nlme,C:/Program Files/R/R-3.4.1/library,3.1-131,recommended,R (>= 3.0.2),"graphics, stats, utils, lattice",NA,"Hmisc, MASS",NA,GPL (>= 2) | file LICENCE,NA,NA,NA,NA,yes,3.4.1
+nloptr,C:/Program Files/R/R-3.4.1/library,1.0.4,NA,NA,NA,NA,testthat (>= 0.8.1),NA,LGPL-3,NA,NA,NA,NA,yes,3.4.1
+nnet,C:/Program Files/R/R-3.4.1/library,7.3-12,recommended,"R (>= 2.14.0), stats, utils",NA,NA,MASS,NA,GPL-2 | GPL-3,NA,NA,NA,NA,yes,3.4.1
+parallel,C:/Program Files/R/R-3.4.1/library,3.4.1,base,NA,"tools, compiler",NA,methods,"snow, nws, Rmpi",Part of R 3.4.1,NA,NA,NA,NA,yes,3.4.1
+pkgconfig,C:/Program Files/R/R-3.4.1/library,2.0.1,NA,NA,utils,NA,"covr, testthat, disposables (>= 1.0.3)",NA,MIT + file LICENSE,NA,NA,NA,NA,no,3.4.1
+plogr,C:/Program Files/R/R-3.4.1/library,0.1-1,NA,NA,NA,NA,Rcpp,NA,MIT + file LICENSE,NA,NA,NA,NA,no,3.4.1
+plyr,C:/Program Files/R/R-3.4.1/library,1.8.4,NA,R (>= 3.1.0),Rcpp (>= 0.11.0),Rcpp,"abind, testthat, tcltk, foreach, doParallel, itertools,
+iterators, covr",NA,MIT + file LICENSE,NA,NA,NA,NA,yes,3.4.1
+R6,C:/Program Files/R/R-3.4.1/library,2.2.2,NA,R (>= 3.0),NA,NA,"knitr, microbenchmark, pryr, testthat, ggplot2, scales",NA,MIT + file LICENSE,NA,NA,NA,NA,no,3.4.1
+RColorBrewer,C:/Program Files/R/R-3.4.1/library,1.1-2,NA,R (>= 2.0.0),NA,NA,NA,NA,Apache License 2.0,NA,NA,NA,NA,no,3.4.0
+Rcpp,C:/Program Files/R/R-3.4.1/library,0.12.12,NA,R (>= 3.0.0),"methods, utils",NA,"RUnit, inline, rbenchmark, highlight, pkgKitten (>= 0.1.2)",NA,GPL (>= 2),NA,NA,NA,NA,yes,3.4.1
+RcppEigen,C:/Program Files/R/R-3.4.1/library,0.3.3.3.0,NA,R (>= 2.15.1),"Matrix (>= 1.1-0), Rcpp (>= 0.11.0), stats, utils",Rcpp,"inline, RUnit, pkgKitten",NA,GPL (>= 2) | file LICENSE,NA,NA,NA,NA,yes,3.4.1
+readr,C:/Program Files/R/R-3.4.1/library,1.1.1,NA,R (>= 3.0.2),"Rcpp (>= 0.12.0.5), tibble, hms, R6","Rcpp, BH","curl, testthat, knitr, rmarkdown, stringi, covr",NA,GPL (>= 2) | file LICENSE,NA,NA,NA,NA,yes,3.4.1
+reshape2,C:/Program Files/R/R-3.4.1/library,1.4.2,NA,NA,"plyr (>= 1.8.1), stringr, Rcpp",Rcpp,"testthat (>= 0.8.0), lattice",NA,MIT + file LICENSE,NA,NA,NA,NA,yes,3.4.1
+rlang,C:/Program Files/R/R-3.4.1/library,0.1.2,NA,R (>= 3.1.0),NA,NA,"knitr, rmarkdown (>= 0.2.65), testthat, covr",NA,GPL-3,NA,NA,NA,NA,yes,3.4.1
+rpart,C:/Program Files/R/R-3.4.1/library,4.1-11,recommended,"R (>= 2.15.0), graphics, stats, grDevices",NA,NA,survival,NA,GPL-2 | GPL-3,NA,NA,NA,NA,yes,3.4.1
+sandwich,C:/Program Files/R/R-3.4.1/library,2.4-0,NA,R (>= 2.10.0),"stats, utils, zoo",NA,"AER, car, geepack, lattice, lmtest, MASS, multiwayvcov, pcse,
+plm, pscl, scatterplot3d, stats4, strucchange, survival",NA,GPL-2 | GPL-3,NA,NA,NA,NA,no,3.4.1
+scales,C:/Program Files/R/R-3.4.1/library,0.4.1,NA,R (>= 2.13),"RColorBrewer, dichromat, plyr, munsell (>= 0.2), labeling,
+methods, Rcpp",Rcpp,"testthat (>= 0.8), covr, hms",NA,MIT + file LICENSE,NA,NA,NA,NA,yes,3.4.1
+spatial,C:/Program Files/R/R-3.4.1/library,7.3-11,recommended,"R (>= 3.0.0), graphics, stats, utils",NA,NA,MASS,NA,GPL-2 | GPL-3,NA,NA,NA,NA,yes,3.4.1
+splines,C:/Program Files/R/R-3.4.1/library,3.4.1,base,NA,"graphics, stats",NA,"Matrix, methods",NA,Part of R 3.4.1,NA,NA,NA,NA,yes,3.4.1
+stats,C:/Program Files/R/R-3.4.1/library,3.4.1,base,NA,"utils, grDevices, graphics",NA,"MASS, Matrix, SuppDists, methods, stats4",NA,Part of R 3.4.1,NA,NA,NA,NA,yes,3.4.1
+stats4,C:/Program Files/R/R-3.4.1/library,3.4.1,base,NA,"graphics, methods, stats",NA,NA,NA,Part of R 3.4.1,NA,NA,NA,NA,NA,3.4.1
+stringi,C:/Program Files/R/R-3.4.1/library,1.1.5,NA,R (>= 2.14),"tools, utils, stats",NA,NA,NA,file LICENSE,yes,NA,NA,NA,yes,3.4.0
+stringr,C:/Program Files/R/R-3.4.1/library,1.2.0,NA,R (>= 2.14),"stringi (>= 0.4.1), magrittr",NA,"testthat, knitr, htmltools, htmlwidgets, rmarkdown, covr",NA,GPL-2 | file LICENSE,NA,NA,NA,NA,no,3.4.1
+survival,C:/Program Files/R/R-3.4.1/library,2.41-3,recommended,R (>= 2.13.0),"graphics, Matrix, methods, splines, stats, utils",NA,NA,NA,LGPL (>= 2),NA,NA,NA,NA,yes,3.4.1
+tcltk,C:/Program Files/R/R-3.4.1/library,3.4.1,base,NA,utils,NA,NA,NA,Part of R 3.4.1,NA,NA,NA,NA,yes,3.4.1
+TH.data,C:/Program Files/R/R-3.4.1/library,1.0-8,NA,"R (>= 2.10.0), survival, MASS",NA,NA,"dplyr, gdata, plyr",NA,GPL-3,NA,NA,NA,NA,no,3.4.1
+tibble,C:/Program Files/R/R-3.4.1/library,1.3.3,NA,R (>= 3.1.0),"methods, rlang, Rcpp (>= 0.12.3), utils",Rcpp,"covr, dplyr, knitr (>= 1.5.32), microbenchmark, nycflights13,
+testthat, rmarkdown, withr",NA,MIT + file LICENSE,NA,NA,NA,NA,yes,3.4.1
+tidyr,C:/Program Files/R/R-3.4.1/library,0.6.3,NA,R (>= 3.1.0),"tibble, dplyr (>= 0.4), stringi, lazyeval, magrittr, Rcpp",Rcpp,"knitr, testthat, covr, gapminder, rmarkdown",NA,MIT + file LICENSE,NA,NA,NA,NA,yes,3.4.1
+tools,C:/Program Files/R/R-3.4.1/library,3.4.1,base,NA,NA,NA,"codetools, methods, xml2, curl",NA,Part of R 3.4.1,NA,NA,NA,NA,yes,3.4.1
+translations,C:/Program Files/R/R-3.4.1/library,3.4.1,NA,NA,NA,NA,NA,NA,Part of R 3.4.1,NA,NA,NA,NA,NA,3.4.1
+utils,C:/Program Files/R/R-3.4.1/library,3.4.1,base,NA,NA,NA,"methods, XML",NA,Part of R 3.4.1,NA,NA,NA,NA,yes,3.4.1
+viridis,C:/Program Files/R/R-3.4.1/library,0.4.0,NA,"R (>= 2.10), viridisLite (>= 0.2.0)","stats, ggplot2 (>= 1.0.1), gridExtra",NA,"hexbin (>= 1.27.0), scales, MASS, knitr, dichromat,
+colorspace, rasterVis, httr, mapproj, vdiffr, svglite (>=
+1.2.0), testthat, covr, rmarkdown",NA,MIT + file LICENSE,NA,NA,NA,NA,no,3.4.1
+viridisLite,C:/Program Files/R/R-3.4.1/library,0.2.0,NA,R (>= 2.10),NA,NA,"hexbin (>= 1.27.0), ggplot2 (>= 1.0.1), testthat, covr",NA,MIT + file LICENSE,NA,NA,NA,NA,no,3.4.1
+yaml,C:/Program Files/R/R-3.4.1/library,2.1.14,NA,NA,NA,NA,testthat,NA,BSD_3_clause + file LICENSE,NA,NA,NA,NA,yes,3.4.1
+zoo,C:/Program Files/R/R-3.4.1/library,1.8-0,NA,"R (>= 2.10.0), stats","utils, graphics, grDevices, lattice (>= 0.20-27)",NA,"coda, chron, DAAG, fts, ggplot2, mondate, scales,
+strucchange, timeDate, timeSeries, tis, tseries, xts",NA,GPL-2 | GPL-3,NA,NA,NA,NA,yes,3.4.1

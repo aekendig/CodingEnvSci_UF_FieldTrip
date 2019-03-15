@@ -1,6 +1,6 @@
 ---
 title: "Introduction to Analyzing Field Data"
-author: "Whalen Dillon"
+author: "Whalen Dillon, Amy Kendig"
 date: "3/14/2019"
 output: html_document
 ---
@@ -11,11 +11,15 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Load packages
 
-Install and load the package "tidyverse", which contains tools for manipulating and visualizing data. *For curriculum development, I've commented out the installation.* 
+Install and load the packages, which contains tools for manipulating and visualizing data. *I've included the packages within tidyverse that are already on the Architecture computers* 
 
 ```{r}
-#install.packages("tidyverse")
-library("tidyverse")
+library(ggplot2)
+library(tibble)
+library(tidyr)
+library(readr)
+library(dplyr)
+library(stringr)
 ```
 
 ## Import data
@@ -25,15 +29,15 @@ During lunch, we entered all of your data. Import the field data from the "data"
 
 ```{r read in data}
 
-bivens_veg_data <- read_csv("coding_curriculum/data/bivens_veg_data_example.csv")
+bivens_veg_data <- read_csv("../data/bivens_veg_data_example.csv")
 ## Pooled vegetation height, weight, and moisture measured at three locations in each plot. The heights are actually averages of three measurements at each location. 
 ## The percent moisture is calculated as the difference between the fresh and dry weight. 
 
-bivens_species_data <- read_csv("coding_curriculum/data/bivens_species_summer.csv")
+bivens_species_data <- read_csv("../data/bivens_species_summer.csv")
 ## Reshaped (from wide to long) and subset cover data that Dr. Cathy Fahey collected. There are a lot of zeroes because it is cover data, so that is something that could be worth discussing (real data) or excluding for the exercise. 
 ## I simulated the 'leaves_damaged' variable
 
-pollinators <- read_csv("coding_curriculum/data/bivens_pollinators_sim.csv")
+pollinators <- read_csv("../data/bivens_pollinators_sim.csv")
 ## Simulated pollinator counts for each plot (40 values)
 
 ```
@@ -62,7 +66,6 @@ pollinators <- read_csv("coding_curriculum/data/bivens_pollinators_sim.csv")
 ```{r fuel load fig}
 
 ggplot(bivens_veg_data, aes(water_trt, dry_weight_g)) +
-  
   geom_boxplot(aes(color = veg_trt), notch = F) +
   geom_point(aes(color = veg_trt), shape = 1, position = position_jitterdodge(jitter.width = .2)) +
 
@@ -125,4 +128,29 @@ ggplot(bivens_veg_data, aes(dry_weight_g, veg_moisture_pct, color = veg_trt)) +
   theme(legend.position = "top")
 
 ```
+## Modify data to match what it will look like when collected
 
+Summarise by plot
+```{r combine data}
+unique(bivens_species_data$year)
+unique(bivens_species_data$scientific_name)
+
+richness <- bivens_species_data %>%
+  filter(year == 2017 & pct_cover > 0) %>%
+  group_by(plot) %>%
+  summarise(
+    richness = length(unique(scientific_name)),
+    leaves_damaged = sum(leaves_damaged)
+  )
+
+veg <- bivens_veg_data %>%
+  group_by(Plot) %>%
+  summarise(
+    height = mean(veg_ht_cm)
+  ) %>%
+  rename(plot = Plot)
+
+dat <- full_join(richness, veg) %>% full_join(pollinators)
+
+write_csv(dat, "../data/biodiversity_example_data.csv")
+```

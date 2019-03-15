@@ -83,7 +83,7 @@ In your notebook, label each line with these (prop - poster with these):
 * Richness
 * Height (3 lines)
 * Pollinators
-* Disease
+* Leaves damaged
 * Observations
 
 These are the steps you'll take to gather these measurments (demonstrate):

@@ -11,11 +11,15 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Load packages
 
-Install and load the package "tidyverse", which contains tools for manipulating and visualizing data. *For curriculum development, I've commented out the installation.* 
+Install and load the packages, which contains tools for manipulating and visualizing data. *I've included the packages within tidyverse that are already on the Architecture computers* 
 
 ```{r}
-#install.packages("tidyverse")
-library("tidyverse")
+library(ggplot2)
+library(tibble)
+library(tidyr)
+library(readr)
+library(dplyr)
+library(stringr)
 ```
 
 ## Import data
@@ -24,7 +28,7 @@ During lunch, we entered all of your data. Import the greenhouse data from the "
 *For curriculum development, I'm importing actual height data and simulating the rest* 
 
 ```{r}
-gh <- read_csv("coding_curriculum/data/invasive_species_example_height.csv")
+gh <- read_csv("../data/invasive_species_example_height.csv")
 ```
 
 Simulation code (will remove)

@@ -98,16 +98,10 @@ interested in helping out with this aspect, some tasks include:
 
     a.  Point plots
 
-3.  On their own: plots of pollinators or infection severity vs. species
+3.  On their own: plots of pollinators or leaf damage vs. species
     richness
 
-4.  Not sure how far into the stats to go. Options:
-
-    b.  Mini lesson on linear regression
-
-    c.  ggplot linear regressions: 'lm' vs. 'lowess' method
-
-    d.  lm function
+4.  ggplot linear regressions: 'lm' vs. 'lowess' method
 
 5.  Translate into a verbal conclusion, talk about variation and next
     steps
@@ -120,7 +114,7 @@ interested in helping out with this aspect, some tasks include:
 
     a.  LMA = weight / leaf area
 
-    b.  Infection severity = area infected / leaf area
+    b.  damage = area infected / leaf area
     
     c.  Add to a data frame: data_frame$LMA = weight / leaf_area
 
@@ -129,7 +123,7 @@ interested in helping out with this aspect, some tasks include:
 
 4.  On their own: change the color palette or shapes
 
-5.  Plots of infection severity vs. leaf traits and origin
+5.  Plots of damage vs. leaf traits and origin
 
     c.  Point plots
 
@@ -137,6 +131,8 @@ interested in helping out with this aspect, some tasks include:
 
 6.  Build upon stats concepts from last lesson because there are
     multiple predictor variables
+    
+    a. Put regressions on the plots made in 5 and talk about how strong the relationships appear to be
 
 7.  On their own: write their conclusions in words following the model
     from the last lesson
@@ -145,6 +141,9 @@ interested in helping out with this aspect, some tasks include:
 
 1.  Given some dataset options that could include similar analyses to
     those above
+    
+    a. Actual data collected from Bivens (bivens_species_data without damage (simulated), bivens_veg_data))
+    b. datasets package: CO2, InsectSprays, npk, OrchardSprays, ToothGrowth (steer them away from time series)
 
 2.  In groups of 2-3, write their own question and use the methods they
     learned to answer it
