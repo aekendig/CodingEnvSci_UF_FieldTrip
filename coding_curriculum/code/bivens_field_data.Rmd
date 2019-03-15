@@ -39,3 +39,90 @@ pollinators <- read_csv("coding_curriculum/data/bivens_pollinators_sim.csv")
 ```
 
 
+## Visualize vegetation data
+
+```{r defining color values}
+
+## Define discrete color and fill variables
+
+### Manual option
+# colors() ## all built-in color names
+# veg_trt_color1 <- scale_color_manual(values = c("cyan","red"))
+# veg_trt_fill1 <- scale_fill_manual(values = c("cyan","red"))
+
+### Viridis option
+# library(viridisLite)
+# library(viridis)
+# veg_trt_color2 <- scale_color_viridis(begin = .15, end = .9, option = "E", discrete = T)
+# veg_trt_fill2 <- scale_fill_viridis(begin = .15, end = .9, option = "E", discrete = T)
+
+```
+
+### Vegetation mass
+```{r fuel load fig}
+
+ggplot(bivens_veg_data, aes(water_trt, dry_weight_g)) +
+  
+  geom_boxplot(aes(color = veg_trt), notch = F) +
+  geom_point(aes(color = veg_trt), shape = 1, position = position_jitterdodge(jitter.width = .2)) +
+
+  # stat_summary(aes(color = veg_trt),fun.data = "mean_se", geom = "pointrange", position = position_dodge(width = .2)) +
+  
+  # invasion_fill +
+  # invasion_color +
+  theme_bw() +
+  xlab("") +
+  ylab(expression(paste("Vegetation mass (g ", {m}^-2, ")"), sep = "")) +
+  theme(legend.position = "top")
+
+```
+
+```{r make a table}
+knitr::kable(bivens_veg_data %>% 
+    group_by(water_trt, veg_trt) %>% 
+    summarise(avg_dry_wt = mean(dry_weight_g),
+              nobs = length(dry_weight_g),
+              se_drywt = sd(dry_weight_g)/sqrt(nobs)),
+    digits = 2, caption = "Fuel load based on sample dry weight")
+
+```
+
+
+### Vegetation moisture
+
+```{r veg moisture boxplot}
+
+ggplot(bivens_veg_data, aes(water_trt, veg_moisture_pct, color = veg_trt)) +
+  
+  geom_boxplot(notch = F) +
+  geom_point(shape = 1, position = position_jitterdodge(jitter.width = .2)) +
+  
+  # stat_summary(aes(color = veg_trt),fun.data = "mean_se", geom = "pointrange", position = position_dodge(width = .2), size = 1) +
+  
+  # invasion_fill +
+  # invasion_color +
+  theme_bw() +
+  xlab("") +
+  ylab("Vegetation moisture (%)") +
+  theme(legend.position = "top")
+
+## Save current figure
+# ggsave("figures/veg_moisture.png", height = 4, width = 5, dpi = 300)
+
+```
+
+```{r veg moisture scatter plot}
+
+ggplot(bivens_veg_data, aes(dry_weight_g, veg_moisture_pct, color = veg_trt)) +
+  
+  geom_point(shape = 1) +
+  
+  # invasion_fill +
+  # invasion_color +
+  theme_bw() +
+  xlab("") +
+  ylab("Vegetation moisture (%)") +
+  theme(legend.position = "top")
+
+```
+
