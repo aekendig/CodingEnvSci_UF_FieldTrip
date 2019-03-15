@@ -1,0 +1,41 @@
+---
+title: "Introduction to Analyzing Field Data"
+author: "Whalen Dillon"
+date: "3/14/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load packages
+
+Install and load the package "tidyverse", which contains tools for manipulating and visualizing data. *For curriculum development, I've commented out the installation.* 
+
+```{r}
+#install.packages("tidyverse")
+library("tidyverse")
+```
+
+## Import data
+
+During lunch, we entered all of your data. Import the field data from the "data" folder.
+*For curriculum development, I'm importing actual height data and simulating the rest* 
+
+```{r read in data}
+
+bivens_veg_data <- read_csv("coding_curriculum/data/bivens_veg_data_example.csv")
+## Pooled vegetation height, weight, and moisture measured at three locations in each plot. The heights are actually averages of three measurements at each location. 
+## The percent moisture is calculated as the difference between the fresh and dry weight. 
+
+bivens_species_data <- read_csv("coding_curriculum/data/bivens_species_summer.csv")
+## Reshaped (from wide to long) and subset cover data that Dr. Cathy Fahey collected. There are a lot of zeroes because it is cover data, so that is something that could be worth discussing (real data) or excluding for the exercise. 
+## I simulated the 'leaves_damaged' variable
+
+pollinators <- read_csv("coding_curriculum/data/bivens_pollinators_sim.csv")
+## Simulated pollinator counts for each plot (40 values)
+
+```
+
+
