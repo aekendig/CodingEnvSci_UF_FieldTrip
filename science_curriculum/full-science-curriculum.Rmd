@@ -1,0 +1,245 @@
+---
+title: "Coding in the Environmental Sciences Workshop: Science Curriculum"
+author: "Amy Kendig, Tabitha Petri"
+date: "5/15/2019"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introductions
+
+In Bivens field lab: This will be the first formal teaching situation of the day, so we'll take some time to introduce volunteers and participants.   
+
+* Everyone will say their first name and something they like or that they wish they knew more about that starts with the same first letter of their first name.   
+* Everyone else will respond with a greeting to that person.
+
+# Introduction to Bivens
+
+Outside at Bivens:
+
+* Drought and invasion experiment (brief intro to invasive species - will expand on later)
+* Industrial hemp program
+* Fire and invasive species
+* Explain what a plot is and that they shouldn't walk through them
+
+# Biodiversity and its benefits
+
+Move between indoor lab and drought experiment as needed
+
+## What is biodiversity?
+
+While we're at the field station, we're going to take advantage of all of the life around us to think about the concept of biodiversity. How many people have heard the word "biodiversity" before? What does it mean to you?
+
+Back-up questions:
+
+* What comes to mind when you think about the prefix “bio”? 
+* How about “diversity”?
+* So what do you think scientists means when they talk about “biodiversity” together?
+
+One way we learn more about biodiversity is by collecting specimens, or examples of organisms. Has anyone been to the Florida Museum? What kind of specimens do they have there?
+
+Take about three minutes and with a partner, go find a specimen and either take a picture of it, or bring it back here. 
+
+Instructions:
+
+* You can pull up plants outside of plots
+* You can take pictures of plants inside of plots
+* We may have nets and containers for collecting insects leftover from activity the previous Friday
+
+When students return, talk about:
+
+* what they saw
+* what other species might be around
+* which things are more or less similar to each other
+
+We don't know the species names for all of these specimens, and that is something we could look up, but for now, let's estimate how many different species we have here. 
+
+That measurement - the number of species is called richness.
+
+* Prop: figure demonstrating different richness between two communities
+
+Another way we can think about diversity is by the number of individuals per species. What is the difference between these two communities?
+
+* Prop: figure demonstrating different evenness between two communities
+
+There are multiple ways to measure diversity, but we're going to use richness or number of species today
+
+## Benefits of biodiversity
+
+Now, that we know what biodiversity is, why does it matter? Take a second and write down in your notebook why biodiversity matters. Allow students to share.
+
+There are some other benefits you might not know about biodiversity. 
+
+* Prop: Poster with these words on them
+
+Disease: Does anyone know why farmers rotate between different types of crops? When you have a single crop, and it has very low variability, so that individuals are basically identical to one another, they are very susceptible to a disease outbreak. If a disease gets into the field that can infect one individual, it can infect all of them and spread very quickly. Biodiversity can stop that spread because some of the individuals will be resistant to the disease, so even if they come into contact with the bacteria or fungus or virus that's causing disease, they won't get infected and they won't spread it.
+
+Pollination: Does anyone know what bees, butterflies, and bats have in common? They are all pollinators. Diverse ecosystems with lots of insects and animals, and lots of plants to support those creatures, provide the global benefit of pollination. Why is pollination important? Not only is pollination useful for the wild plants like the ones you see out here, but it is necessary for lots of crops like almonds, apples, plums, and blueberries.
+
+Photosynthesis: The third benefit of biodiversity I want us to think about today is photosynthesis. 
+
+* Someone explain to us what photosynthesis is. 
+* Why should we care about photosynthesis?
+
+Not only do we benefit from the clean air, but the building up of sugars and plant material is very useful. We call that plant material biomass. Biomass can be used for food, like the grass that cattle eat, it can be a place where the earth stores CO2, like in forests, or it can be used as an alternative fuel source.
+
+## Data collection
+
+In groups of 2-3, students will collect data from the drought/invasion experiments on species richness, an approximation for biomass, and either pollinator or disease intensity.
+
+In your notebook, label each line with these (prop - poster with these):
+
+* Plot (for plot number)
+* Richness
+* Height (3 lines)
+* Pollinators
+* Disease
+* Observations
+
+These are the steps you'll take to gather these measurments (demonstrate):
+
+* Hold PVC quadrats over a plot
+* Record number of observable plant species (morphological differences)
+ + Can use [iNaturalist](https://www.inaturalist.org) for species identification
+* Use a meter stick to estimate height of plants within quadrat
+ + Pick three different heights to record, preferably different canopy heights
+* Record number of observable pollinators
+* Estimate number of leaves with damage that looks like it was caused by a pathogen
+* In the observations section, write down any observations that don't fit into these categories. For example, some of our researchers have noticed rodent nests in some of these plots. That would be something to write down because it could lead to an interesting follow-up study.
+
+Before you start, write in your notebook how you think richness will be related to height, pollinators, and disease when we pool the data across all of the plots. Share and discuss.
+
+## Supplies
+
+Props:
+
+* Richness/evenness poster
+* Biodiversity benefits poster
+* Data collection poster
+
+Materials:
+
+* PVC Quadrats
+* Notebooks
+* Pencils
+* Phone apps (tell them to download ahead of time)
+* Meter sticks
+* Insect nets
+* Clear containers 
+
+# Invasive species and infection
+
+McCarty B lab
+
+## What is an invasive species?
+
+We talked a little bit about invasive species at the field site, but let's discuss them more.
+Has anyone heard of kudzu, Burmese pythons, or lionfish?  
+
+* Props: pictures of each
+
+Tell me a little about what you know about these species
+
+* Kudzu grows over buildings and other plants, which causes structural damage and suppresses native species  
+* Burmese pythons consume animals like deer, racoons, rabbits, and other mammals, which not only affect those populations, but top predators like panthers and alligators. They also consume birds, inclduing endangered species.  
+* Lionfish consume other fish, which could have large effects on fisheries and the biodiversity of coral reefs.
+
+What do these species have in common?
+
+* Negatively affect native species
+* Categorized as "invasive"
+* They are all found in Florida
+* Prop: Have distributions from EDDMaps available to show 
+
+What causes a species to be called "invasive"?
+
+* Usually, they are not native, meaning that they were probably introduced accidentally or on purpose by humans
+* They have relatively large population sizes
+* They have a negative impact on humans and/or species that we care about (e.g. native or agricultural)
+
+With a partner, come up with answers to these two questions:
+
+* What are some negative impacts of invasive species that you might care about?
+* How is it possible that invasive species can get to this point where they have large populations and are destructive?
+
+Review answers, some possibilities:
+
+* Impacts: reduced native plant diversity, fewer mammals, fewer birds, make species endangered, make buildings or land less valuable
+* Success: fewer predators/herbivores/diseases or better tolerance, better competitors than native species, use a unique set of resources for that location, can take advantage of mutualisms better than native species 
+
+Emphasize that plants get diseases, just like people, and that these can affect survival and reproduction.
+
+## Activity explanation
+
+Today, we're going to collect data from an experiment that has the overall goal of understanding how an invasive species affects disease spread. In the greenhouse we grew a widespread invasive species, *Microstegium vimineum*, and a native species, *Elymus virginicus*. We sprayed half of thes with fungicide, which suppresses the growth of fungal pathogens.  
+
+What is a fungus and what is a pathogen?
+
+* A fungus is an organism that produces spores. You might be familiar with mushrooms or yeast, which are fungi.
+* A pathogen feeds off a host in order to survive and usually hurts the host
+
+We are using fungicide to suppress a fungal pathogen like the one on these plants (show example infected *M. vimineum* plants) in a field experiment in Indiana. However, we don't know if there are any side effects of the fungicide. So these plants are meant to answer that question.
+
+What are some traits of these plants we could measure to try to understand if fungicide affects growth?
+
+In your notebook, label each line with these (prop - poster with these):
+
+* Pot (for pot number/ID)
+* Species
+* Fungicide
+* Height
+* Leaf weight
+* Leaf area
+
+You will record the data for two pots - one with the invasive species and one with the native species.
+
+In your notebook, write down your hypothesis:
+
+* How does fungicide affece the growth of the invasive species and the native species?
+
+Share some of your hypotheses.
+
+To measure height, we have tape measures next to the pots. Choose the longest part of the plant to measure from the soil up to the top. To measure leaf weight, chose one leaf and measure it with the scale. Then, bring that leaf over to the scanner. We'll use this to tell you leaf area. Once you have picked a pot, move it to this other table so that it doesn't get measured twice. 
+
+Can someone explain to use how to use the scale?
+
+* zero it
+* use the weigh boat
+* wait for it to stabilize
+
+## Supplies
+
+Props:
+
+* Invasive species pictures and EDDMapS distribution
+* Data collection poster
+
+Materials:
+
+* Notebooks
+* Pencils
+* Measuring tape
+* Scale
+* Weigh boat
+* Scanner
+* Computer
+
+# Lunchtime learning
+
+## Career videos
+
+Youtube videos that show women with coding careers:
+https://www.youtube.com/playlist?list=PLVaVtssPVsoPXJRmAd2hfTXJmL58aTadD 
+
+## Career brainstorming list
+
+<!-- https://www.codecamp.com.au/blog/five-careers-where-coding-skills-will-help-your-kids-get-ahead -->
+
+* Design: graphics, art, products
+* Data analysis: business forecasting, marketing, insurance
+* Engineering: machines, buildings, systems for sustainability, products
+* Science: chemistry, medicine, genetics, physics 
+* Computer programming/IT: websites, computer networks, artificial intelligence

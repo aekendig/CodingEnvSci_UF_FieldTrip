@@ -1,0 +1,17 @@
+---
+title: "Introductions"
+author: "Amy Kendig"
+date: "5/15/2019"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Ice breaker
+
+This will be the first formal teaching situation of the day, so we'll take some time to introduce volunteers and participants.   
+
+* Everyone will say their first name and something they like or that they wish they knew more about that starts with the same first letter of their first name.   
+* Everyone else will respond with a greeting to that person.

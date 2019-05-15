@@ -4,7 +4,6 @@ author: "Amy Kendig"
 date: "3/8/2019"
 output:
   word_document: default
-  html_document: default
 ---
 
 ```{r setup, include=FALSE}
