@@ -1,7 +1,14 @@
-# Coding Curriculum Development
+---
+title: "Coding Curriculum Outline"
+author: "Amy Kendig, Whalen Dillon"
+output: word_document
+---
 
-Below is the outline of ideas for the coding curriculum. If you're
-interested in helping out with this aspect, some tasks include:
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Tasks for completing coding curriculum:
 
 -   Editing the outline with additional ideas and modifications
 
@@ -17,6 +24,8 @@ interested in helping out with this aspect, some tasks include:
 
 3.  Learn about uncertainty/variation/the limits of scientific inference
 
+**Work backwards from data they will work with to skills for visualization**
+
 ## Overview
 
 1.  Time: 1:15 pm -- 4:pm
@@ -26,15 +35,15 @@ interested in helping out with this aspect, some tasks include:
 3.  Lessons
 
     a.  Introduction to R
+    
+    b.  Analyzing data: Biodiversity and its benefits
 
-    b.  Analyzing data: Invasive species and infectious disease
-
-    c.  Analyzing data: Biodiversity and its benefits
+    c.  Analyzing data: Invasive species and infections
 
     d.  If time: Using publicly available data to answer your own
         questions
 
-4.  Refer to the Science Curriculum document for experiment details
+4.  Refer to the full-science-curriculum document for experiment details
     relevant to b and c
 
 5.  Lessons will involve walking through concepts while students follow

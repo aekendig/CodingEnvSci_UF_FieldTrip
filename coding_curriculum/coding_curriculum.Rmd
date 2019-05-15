@@ -2,9 +2,7 @@
 title: "Coding Curriculum Development"
 subtitle: "UF Env Sci Field Trip"
 author: "Amy Kendig, Whalen Dillon"
-output: 
-  html_document:
-    toc: yes
+output: word_document
 ---
 
 ```{r setup, include=FALSE}
