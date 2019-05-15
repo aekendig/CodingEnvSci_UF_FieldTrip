@@ -11,15 +11,16 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Load packages
 
-Install and load the packages, which contains tools for manipulating and visualizing data. *I've included the packages within tidyverse that are already on the Architecture computers* 
+Install and load the packages, which contain tools for manipulating and visualizing data. *I've included the packages within tidyverse that are already on the Architecture computers* 
 
-```{r}
+```{r packages}
 library(ggplot2)
 library(tibble)
 library(tidyr)
 library(readr)
 library(dplyr)
 library(stringr)
+library(graphics)
 ```
 
 ## Import data
@@ -27,11 +28,11 @@ library(stringr)
 During lunch, we entered all of your data. Import the greenhouse data from the "data" folder.
 *For curriculum development, I'm importing actual height data and simulating the rest* 
 
-```{r}
-gh <- read_csv("../data/invasive_species_example_height.csv")
+```{r import data}
+gh <- read_csv("./data/invasive_species_example_height.csv")
 ```
 
-Simulation code (will remove)
+*Simulation code (will remove)*
 
 ```{r}
 library("truncnorm")
@@ -45,9 +46,43 @@ gh <- gh %>%
   )
 ```
 
-Add the full species name to the data
+Let's add the full species names to the data
 
-```{r}
+```{r species}
 gh$species_full <- recode(gh$species, Mv = "Microstegium vimineum", Ev = "Elymus virginicus", Es = "Eragrostis spectabilis", Pc = "Panicum clandestinum", Cc = "Calamagrostis canadensis", Gs = "Glyceria striata")
 ```
 
+Let's create a new column called "LMA", which is the weight of a leaf divided by its area.
+
+```{r LMA}
+gh$LMA <- gh$weight/gh$leaf_area
+```
+
+Now it's your turn to create a new column. Call this one "percent_damage" and make it equal to the damage area divided by the leaf area times 100.
+
+```{r percent damage}
+gh$percent_damage <- gh$damage_area/gh$leaf_area*100
+```
+
+Let's use ggplot to look at some of the relationships among plant traits. First, let's see how LMA and height are related to one another.
+
+```{r height-LMA plot}
+ggplot(gh, aes(x = LMA, y = height)) + 
+  geom_point()
+```
+
+Now let's add on to this plot. Let's color the points by which species they belong to.
+
+```{r height-LMA plot 2}
+ggplot(gh, aes(x = LMA, y = height)) + 
+  geom_point(aes(color = species))
+```
+
+What conclusions can you draw? Are all of the species similar to one another? Which is the invasive species? What are its traits like relative to the others?
+
+Now, create a similar plot with percent damage on the y-axis and LMA on the x-axis. We've created the code chunk below for you to fill in.
+
+```{r damage-LMA plot}
+
+
+```

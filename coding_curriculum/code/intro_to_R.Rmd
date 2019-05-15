@@ -1,0 +1,40 @@
+---
+title: "intro_to_R"
+author: "Amy Kendig"
+date: "3/29/2019"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Packages section: note warning messages and when students can ignore them
+
+```{r packages}
+
+```
+
+Data importing: note red text that comes up with read_csv
+
+```{r import data}
+
+```
+
+Columns with $
+
+```{r columns}
+
+```
+
+Manipulating data: filter for specific values
+
+```{r filter}
+
+```
+
+Visualizing data
+
+```{r plot}
+
+```
