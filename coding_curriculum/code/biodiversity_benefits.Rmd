@@ -1,0 +1,34 @@
+---
+title: "biodiversity_benefits"
+author: "Your name here"
+date: "6/1/2019"
+output: html_document
+---
+
+## Ignore the code below
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## How this works
+
+Now you'll be working straight in RStudio. The code is highlighted in gray and all the other text has a white background. You can run the code in the gray box with the little green arrow. You can also edit it right in the box.
+
+## Load packages
+
+Load the plotting package, ggplot2, by running the code below.
+
+```{r}
+library(ggplot2)
+```
+
+If the window below this one collapsed, use the icon on the bottom right that shows two squares to restore it.
+
+## Import data
+
+We entered the data you collected at the research station and put it into the "data" folder. Now, import the data from that folder by running the code below. 
+
+```{r}
+bio <- read.csv("./data/biodiversity_example_data.csv")
+```
