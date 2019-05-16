@@ -1,6 +1,7 @@
 ---
 title: "Coding Curriculum Outline"
 author: "Amy Kendig, Whalen Dillon"
+date: "5/15/2019"
 output: word_document
 ---
 
@@ -54,10 +55,16 @@ Tasks for completing coding curriculum:
 
 1.  Overview of what R is
 
-2.  R Studio set up
+    a.  A free, open-source (define) software for analyzing data and making scientific graphs
+    
+    b. R Studio is the program we'll use to organize all of our tools in R
+    
+    c. We'll use some interactive documents within R studio to learn new concepts
 
-3.  Basic concepts that will be needed for the next sections
+2.  Basic concepts that will be needed for the next sections
 
+    a. Simple operations
+    
     a.  Variable naming - NOSPACES
     
         i. Commonly used: variablename, variable_name, variable.name, variableName, VariableName
@@ -65,20 +72,14 @@ Tasks for completing coding curriculum:
         ii. Recommend: variable_name 
     
     b.  Commenting code: e.g., #this is a comment, so won't be read by R
-    
-    c.  Calculations
-    
-        i. Add/subtract, multiply/divide. Use vectors?
-        
-        ii. Intro to functions: mean, median, sqrt
 
-    d.  Dataframe
+    c.  Dataframe
     
         i. Data types? numeric, character, factor
 
-    e.  Plots
+    d.  Plots
 
-    f.  Packages?
+    e.  Packages?
 
         i.  ggplot
         
