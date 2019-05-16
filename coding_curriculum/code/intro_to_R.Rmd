@@ -6,7 +6,11 @@ runtime: shiny_prerendered
 
 ```{r setup, include=FALSE}
 library(learnr)
+library(RCurl)
+library(ggplot2)
+
 knitr::opts_chunk$set(echo = FALSE)
+
 dos <- 2
 pie <- 3.14
 apple <- 12
@@ -14,8 +18,11 @@ calculate <- function(x) {
   y <- (x + 15) * 11 / 8
   return(y)
 }
-thanksgiving_pies <- read.csv("./data/thanksgiving-pies-2015.csv")
+thanksgiving_pies <- read.csv(text=getURL("https://raw.githubusercontent.com/aekendig/CodingEnvSci_UF_FieldTrip/master/coding_curriculum/data/thanksgiving-pies-2015.csv"))
 total <- sum(thanksgiving_pies$count)
+```
+
+```{r pie-percent, include=FALSE}
 thanksgiving_pies$percent <- thanksgiving_pies$count/total*100
 ```
 
@@ -133,10 +140,10 @@ Sometimes you'll see an output, such as information about the package, sometimes
 ## It's data time
 Now, let's practice working with some data. 
 
-Often, we type data into a program like Excel. We have to then import it into R to work with it. Run the code below, which imports data on the types of pies people eat at Thanksgiving.
+Often, we type data into a program like Excel. We have to then import it into R to work with it. Run the code below, which imports data on the types of pies people eat at Thanksgiving. The file is stored on a website, to we're using a url to get it.
 
 ```{r import data, exercise=TRUE}
-thanksgiving_pies <- read.csv("./data/thanksgiving-pies-2015.csv")
+thanksgiving_pies <- read.csv(text=getURL("https://raw.githubusercontent.com/aekendig/CodingEnvSci_UF_FieldTrip/master/coding_curriculum/data/thanksgiving-pies-2015.csv"))
 ```
 
 We call data tables like this "dataframes". Let's look at the top of our dataframe:
@@ -161,25 +168,27 @@ We can use R's "calculator capabilities" to manipulate the dataframe. For exampl
 
 ```{r total, exercise=TRUE}
 total <- sum(thanksgiving_pies$count)
+total
 ```
 
 Next, we divide each count by the total and multiply by 100 to get the percent. We'll save this as a new column called "percent":
 
 ```{r percent, exercise=TRUE}
 thanksgiving_pies$percent <- thanksgiving_pies$count/total*100
+thanksgiving_pies$percent
 ```
 
 Now, let's look at the percentage of people who prefer each pie type by making a plot:
 
-```{r plot, exercise=TRUE}
+```{r plot, exercise=TRUE, exercise.setup="pie-percent"}
 ggplot(thanksgiving_pies, aes(x = pie_type, y = percent)) +
   geom_bar(stat = "identity") 
 ```
 
 Let's walk through the different pieces of that code. First, we use the function ggplot to make our plot. We tell R that the dataframe is thanksgiving_pies. Then, we use different parts of that dataframe to make the plot: pie_type is on the x-axis and percent is on the y-axis. Then, we tell R that we want to make a bar chart (geom_bar(stat = "identity"), the stat = "identity" part is specific to bar charts).
 
-Try making a similar plot with "count" on the y-axis:
+Try making a similar plot with "count" on the y-axis. You are encouraged to copy, paste, and edit code:
 
-```{r plot 2, exercise=TRUE}
+```{r plot 2, exercise=TRUE, exercise.setup="pie-percent"}
 
 ```
