@@ -66,6 +66,8 @@ fung
 # A small LMA tells us that the leaf is very thin and grows quickly.
 fung$LMA <- fung$leaf_weight/fung$leaf_area
 
+# Now check that it looks right by using the "head" function like you did at the top of this activity.
+
 
 
 #### Plot of fungicide and LMA ####
