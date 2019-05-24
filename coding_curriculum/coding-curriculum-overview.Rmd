@@ -9,14 +9,6 @@ output: word_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Tasks for completing coding curriculum:
-
--   Editing the outline with additional ideas and modifications
-
--   Writing R markdown scripts for sections
-
--   Testing lessons on your computer or in the computer lab
-
 ## Learning Goals
 
 1.  Understand how data collected from experiments leads to conclusions
@@ -50,6 +42,8 @@ Tasks for completing coding curriculum:
 5.  Lessons will involve walking through concepts while students follow
     along on their computers and then an opportunity for them to try
     concepts on their own.
+    
+6. URL for students to download materials: https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/aekendig/CodingEnvSci_UF_FieldTrip/tree/master/for_students or tinyurl.com/UFEnvCode 
 
 ## Introduction to R
 
